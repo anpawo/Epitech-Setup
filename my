@@ -6,7 +6,7 @@
 commandList=(
     "c"
     "hstyle"
-    # "cstyle" deleted ;(
+    "cstyle"
 )
 
 for command in "${commandList[@]}"
