@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -eq 1 ] && [ "$1" == "--help" ]; then
+    echo "\
+Calls the C coding style checker (banana)
+
+    Without arguments:  on the current directory.
+    With arguments:     on the first argument."
+    exit
+fi
+
+if [ $# -eq 0 ]; then
+    banana . /tmp/
+else
+    banana "$1" /tmp/
+fi
+
+clear
+cat /tmp/coding-style-reports.log
