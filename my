@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+# Display my Custom Commands
+
+commandList=(
+    "c"
+    "hstyle"
+    # "cstyle" deleted ;(
+)
+
+for command in "${commandList[@]}"
+    do
+        if [ "$1" == "--help" ]; then
+            printf "\e[1;31m%s\e[0m\t=> " "$command"
+            $command "--help"
+        else
+            printf "\e[1;31m%s\e[0m" "$command"
+        fi
+        echo
+    done
+

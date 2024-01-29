@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -eq 1 ] && [ "$1" == "--help" ]; then
+    echo "\
+Calls the Haskell coding style checker (lambdananas)
+
+    Without arguments:  on the current directory.
+    With arguments:     on the first argument."
+    exit
+fi
+
+if [ $# -eq 0 ]; then
+    lambdananas .
+else
+    lambdananas "$1"
+fi
