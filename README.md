@@ -1,2 +1,2 @@
-# my-custom-commands
-custom commands for linux (Epitech)
+# custom-commands
+my custom commands for linux (Epitech)
