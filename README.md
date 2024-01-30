@@ -1,2 +1,3 @@
-# custom-commands
-my custom commands for linux (Epitech)
+# custom-setup
+
+my custom setup for linux when coding (Epitech)
