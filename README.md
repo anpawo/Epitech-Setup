@@ -1,3 +1,3 @@
 # custom-setup
 
-my custom setup for linux when coding (Epitech)
+my custom setup for linux for Epitech
