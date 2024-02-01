@@ -4,6 +4,7 @@
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
+alias gst="git status"
 
 alias hs="hstyle"
 alias cs="cstyle"
