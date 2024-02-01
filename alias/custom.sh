@@ -1,6 +1,9 @@
 #!/usr/bin/bash
 
 # usefull
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
 
 alias hs="hstyle"
 alias cs="cstyle"
