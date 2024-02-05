@@ -8,7 +8,7 @@ alias md="mkdir"
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
-alias gst="git status"
+alias g="git status"
 
 alias '?'='echo $?'
 
