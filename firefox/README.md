@@ -1,0 +1,3 @@
+# firefox
+
+my custom hotkey
