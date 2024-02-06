@@ -5,6 +5,7 @@ alias grep='grep --color=auto'
 alias l="ls --color=auto"
 alias md="mkdir"
 
+alias g.="git add ."
 alias ga="git add"
 alias gc="git commit -m"
 alias gp="git push"
