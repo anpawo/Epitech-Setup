@@ -3,9 +3,11 @@ r     = cppref
 
 d     = discord
 
-p     = plan crédit excel
+plan  = plan crédit excel
+
 m     = mouli
-i     = intra planning
+i     = intra home
+p     = intra planning
 
 cmp   = text compare
 
