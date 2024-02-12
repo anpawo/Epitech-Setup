@@ -1,0 +1,51 @@
+{
+    "Current Full Path": {
+        "prefix": "fp",
+        "description": "Full path of the current file.",
+        "body": "\"$TM_FILEPATH\""
+    },
+    "Python Shebang": {
+        "scope": "python",
+        "prefix": "!s",
+        "body": ["#!/usr/bin/env python3", "", "", ""]
+    },
+    "cout cpp": {
+        "scope": "cpp",
+        "prefix": "cout",
+        "body": ["std::cout << $0 << std::endl;"]
+    },
+    "endl cpp": {
+        "scope": "cpp",
+        "prefix": "end",
+        "body": ["<< std::endl;"]
+    },
+    "str cpp": {
+        "scope": "cpp",
+        "prefix": "str",
+        "body": ["std::string "]
+    },
+    "iostream include": {
+        "scope": "cpp",
+        "prefix": "io",
+        "body": ["#include <iostream>"]
+    },
+    "class": {
+        "scope": "cpp",
+        "prefix": "cl",
+        "body": [
+            "class $1 {",
+            "public:",
+            "	$1($2);",
+            "	~$1();",
+            "	$3",
+            "private:",
+            "	$0",
+            "};"
+        ]
+    },
+    "header guard": {
+        "scope": "cpp",
+        "prefix": "once",
+        "body": ["#pragma once", ""]
+    }
+}
