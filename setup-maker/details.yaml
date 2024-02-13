@@ -1,0 +1,31 @@
+file:
+    - .gitignore
+    - Makefile
+    - CMake
+    - README.md
+
+directory:
+    - docs:
+          - subject.pdf
+          - bootstrap.pdf
+
+    - include:
+          - Interface
+          - Abstract
+          - Object
+
+          - my:
+                - def
+                - error
+
+    - scripts:
+          - clean
+
+    - src:
+          - main
+
+    - tests:
+          - tests
+
+    - lib:
+          - empty
