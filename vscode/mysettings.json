@@ -1,0 +1,96 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.allowedLocales": {
+        "es": true
+    },
+    "files.exclude": {
+        "**/.DS_Store": false,
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false,
+        "**/Thumbs.db": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+    "black-formatter.args": ["--line-length=120"],
+    "cmake.configureOnOpen": true,
+    "files.autoSave": "afterDelay",
+    "git.confirmSync": false,
+    "workbench.editorAssociations": {
+        "*.ttf": "default",
+        "*.html": "default"
+    },
+    "git.openRepositoryInParentFolders": "always",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.shellcheck": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.arrowParens": "avoid",
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "eslint.ignoreUntitled": true,
+    "typescript.format.insertSpaceAfterConstructor": true,
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingDelete": "always",
+    "editor.autoClosingQuotes": "always",
+    "search.exclude": {
+        "**/*.code-search": false,
+        "**/bower_components": false
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "haskell.manageHLS": "GHCup",
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none",
+    "epitech-c-cpp-headers.username": "marius rousset",
+    "epitech-c-cpp-headers.login": "",
+    "epitech-c-cpp-headers.usePragmaOnce": true,
+    // "epitech-c-cpp-headers.autoGenerateClasses": true, doesnt work
+    "window.zoomLevel": 1,
+    "shellcheck.enable": true,
+    // "C_Cpp.formatting": "vcFormat",
+    // "C_Cpp.vcFormat.space.withinInitializerListBraces": false,
+    // "C_Cpp.vcFormat.newLine.beforeElse": false,
+    // "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+    // "[cpp]": {
+    //     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    // },
+    // "[c]": {
+    //     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    // },
+    "clangd.path": "/home/roussetmarius/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+    "editor.inlayHints.enabled": "off",
+    "[c]": {
+        "editor.tabSize": 4
+    },
+    "[cpp]": {
+        "editor.tabSize": 4
+    },
+    "[hpp]": {
+        "editor.tabSize": 4
+    },
+    "editor.tabSize": 4,
+    "cmake.showOptionsMovedNotification": false,
+    "explorer.confirmPasteNative": false,
+    "[haskell]": {
+        "editor.defaultFormatter": "haskell.haskell"
+    }
+}
