@@ -28,6 +28,7 @@ AttributeMacros:
     - __capability
 BinPackArguments: true
 BinPackParameters: true
+BreakBeforeBraces: Custom
 BraceWrapping:
     AfterNamespace: true
     AfterCaseLabel: false
@@ -50,7 +51,6 @@ BraceWrapping:
     SplitEmptyNamespace: true
 BreakBeforeBinaryOperators: None
 BreakBeforeConceptDeclarations: true
-BreakBeforeBraces: Attach
 BreakBeforeInheritanceComma: false
 BreakInheritanceList: BeforeColon
 BreakBeforeTernaryOperators: true
