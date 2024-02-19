@@ -9,11 +9,13 @@ Calls the C coding style checker (banana)
     exit
 fi
 
+# Delete old log
+sudo rm -rf /tmp/coding-style-reports.log
+
 if [ $# -eq 0 ]; then
     banana . /tmp/
 else
     banana "$1" /tmp/
 fi
-
 clear
 cat /tmp/coding-style-reports.log
