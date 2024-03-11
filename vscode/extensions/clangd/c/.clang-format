@@ -1,0 +1,30 @@
+---
+# Import the Google Format and then add my Custom Settings
+BasedOnStyle: Google
+
+# For the C Language we use Cpp
+Language: Cpp
+
+# Indent Width
+IndentWidth: 4
+
+# Braces {}
+# BreakBeforeBraces is needed for BraceWrapping if case specific
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterFunction: true
+
+# Prevent Function or Condition on a single line
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+
+# Insert New Line at OEF if there's none
+InsertNewlineAtEOF: true
+
+# "*" Right Alignment, next to the variable name
+# DerivePointerAlignment to false, otherwise it depends on the current indent
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+# Function Arguments Alignement = Like line above
+AlignAfterOpenBracket: DontAlign
