@@ -1,0 +1,11 @@
+257 "/"
+503 Bad sequence of commands.
+. mkdir tmpdir
+250 Requested file action okay, completed.
+. mkdir tmpdir
+250 Requested file action okay, completed.
+257 "/tmpdir"
+250 Requested file action okay, completed.
+250 Requested file action okay, completed.
+550 Requested action not taken.
+257 "/"

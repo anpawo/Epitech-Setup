@@ -1,0 +1,9 @@
+import .auth
+CWD src/cmd
+PWD
+CDUP
+PWD
+CWD ~
+PWD
+CDUP
+PWD

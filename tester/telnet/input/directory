@@ -1,0 +1,18 @@
+import .auth
+PWD
+CWD ..
+PWD
+CWD a
+PWD
+CWD include/
+PWD
+CWD ..
+PWD
+CWD include
+PWD
+CWD ~
+PWD
+CWD src/cmd
+PWD
+CWD ~
+PWD

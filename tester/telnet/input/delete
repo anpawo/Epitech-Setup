@@ -1,0 +1,12 @@
+import .auth
+PWD
+DELE
+. mkdir tmpdir
+DELE tmpdir
+. mkdir tmpdir
+CWD tmpdir
+PWD
+CWD ~
+DELE tmpdir
+CWD tmpdir
+PWD
