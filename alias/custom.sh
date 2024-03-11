@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 # --- alias --- #
 alias grep='grep --color=auto'
@@ -23,3 +23,7 @@ alias aliasdir="c /etc/profile.d/custom.sh"
 alias cpy="xclip -selection clipboard"
 
 alias extract="tar -xvzf"
+
+alias m="make re -j"
+
+alias cl="clear"
