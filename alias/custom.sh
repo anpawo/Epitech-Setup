@@ -25,5 +25,6 @@ alias cpy="xclip -selection clipboard"
 alias extract="tar -xvzf"
 
 alias m="make re -j"
+alias f="make fclean"
 
 alias cl="clear"
