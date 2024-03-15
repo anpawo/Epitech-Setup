@@ -12,7 +12,7 @@ IndentWidth: 4
 # BreakBeforeBraces is needed for BraceWrapping if case specific
 BreakBeforeBraces: Custom
 BraceWrapping:
-    AfterFunction: true
+  AfterFunction: true
 
 # Prevent Function or Condition on a single line
 AllowShortFunctionsOnASingleLine: None
@@ -28,3 +28,9 @@ PointerAlignment: Right
 
 # Function Arguments Alignement = Like line above
 AlignAfterOpenBracket: DontAlign
+
+# Max column on one line (bug with array length)
+ColumnLimit: 80
+
+# Prevent if () return;
+AllowShortIfStatementsOnASingleLine: Never
