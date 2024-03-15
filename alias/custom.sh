@@ -26,5 +26,6 @@ alias extract="tar -xvzf"
 
 alias m="make re -j"
 alias f="make fclean"
+alias fm="make fclean ; make re -j"
 
 alias cl="clear"
