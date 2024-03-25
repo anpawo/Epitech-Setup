@@ -29,3 +29,6 @@ alias f="make fclean"
 alias fm="make fclean ; make re -j"
 
 alias cl="clear"
+
+alias max="wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
+alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
