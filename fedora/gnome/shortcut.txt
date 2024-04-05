@@ -1,0 +1,8 @@
+Ctrl+Alt+T          Terminal                gnome-terminal 
+Ctrl+Alt+F          Firefox                 firefox
+Ctrl+Alt+D          Discord                 Discord
+Alt+S               System Settings         gnome-control-center
+
+Alt+Tab             Switch Windows          
+Disabled            Switch Applications
+Alt+F2              Run Command prompt

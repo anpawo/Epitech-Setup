@@ -12,4 +12,3 @@ I'm using gnome on Fedora 39
 - lots of tester for every project
 - vscode extensions, settings, user snippets, which are not the default ones (clangd)
 - shortcut for fedora
-  
