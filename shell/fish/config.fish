@@ -36,3 +36,7 @@ alias cl="clear"
 
 alias max="wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
 alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
+
+alias "nc localhost"="nc 127.0.0.1"
+
+alias t="./tests/tester.py"
