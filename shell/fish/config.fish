@@ -37,6 +37,11 @@ alias cl="clear"
 alias max="wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
 alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
 
-alias "nc localhost"="nc 127.0.0.1"
+alias nc="nc 127.0.0.1"
 
-alias t="./tests/tester.py"
+alias t="./tests/tester.py 2> /dev/null"
+
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot'
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+set -gx PATH $HOME/.cabal/bin /home/mr/.ghcup/bin $PATH # ghcup-env
