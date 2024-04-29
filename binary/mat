@@ -1,0 +1,82 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+    echo "Invalid number of arguments, expected [number] [name]"
+    echo "e.g:  ./mat 207 demography"
+    exit 1
+fi
+
+mat_dir="/home/mr/delivery/mat"
+numb="$1"
+name="$2"
+proj_name="$numb$name"
+rust_name="$name$numb"
+
+repo="B-MAT-400-PAR-4-1-$proj_name-marius.rousset"
+url="git@github.com:EpitechPromo2027/$repo.git"
+
+# get in the mat directory
+cd "$mat_dir" || exit
+
+# init rust
+cargo new "$rust_name"
+mv "$rust_name" "$proj_name"
+rm -rf "$proj_name/.git"
+
+# clone the repo
+git clone "$url"
+mv "$repo/.git" "$proj_name"
+rm -rf "$repo"
+
+# setup the project files
+
+makefile=$(cat <<EOF
+##
+## EPITECH PROJECT, 2024
+## $proj_name
+## File description:
+## Makefile
+##
+
+# Needed because cargo prevents directory name starting with a digit
+RUST_NAME	=	$rust_name
+PROJ_NAME	=	$proj_name
+
+
+
+.PHONY: all
+all:
+	cargo build
+	cp ./target/debug/\$(RUST_NAME) \$(PROJ_NAME)
+
+
+.PHONY: clean
+clean:
+
+
+.PHONY: fclean
+fclean:
+	@ \$(RM) \$(PROJ_NAME)
+
+
+.PHONY: re
+re: fclean
+re: all
+
+EOF
+)
+
+readme="# $numb $name"
+
+cd "$proj_name" || exit
+
+echo "$makefile" > "Makefile"
+echo "$readme" > "README.md"
+echo "$proj_name" >> .gitignore
+
+make
+make fclean
+
+git add .
+git commit -m "feat: repo init, name = $proj_name"
+git push
