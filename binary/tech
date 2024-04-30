@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+    dir="$(realpath "$1")"
+else
+    dir="$(pwd)"
+fi
+
+docker run -it --name epitech -v "$dir":/vol/ -w /vol/ epitechcontent/epitest-docker
+
+docker rm epitech > /dev/null
