@@ -2,6 +2,7 @@
 set fish_greeting
 set fish_prompt_pwd_dir_length 0
 
+
 # key binding
 bind \cH backward-kill-word
 
@@ -37,11 +38,15 @@ alias cl="clear"
 alias max="wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz"
 alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
 
-alias nc="nc 127.0.0.1"
+# alias nc="nc 127.0.0.1"
 
-alias t="./tests/tester.py 2> /dev/null"
+# alias t="./tests/tester.py 2> /dev/null" not used anymore
 
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot'
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin /home/mr/.ghcup/bin $PATH # ghcup-env
+
+# alias '?'='echo $?' not needed since my fish prompt shows the status code
+
+alias p="python"
