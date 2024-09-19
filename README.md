@@ -1,7 +1,7 @@
 # custom-setup
 
 My custom setup for linux during Epitech  
-I'm using gnome on Fedora 39
+I'm using gnome on Fedora 40
 
 # configurations
 
