@@ -8,6 +8,7 @@ commandList=(
     "hstyle"
     "cstyle"
     "mat"
+    "tech"
 )
 
 for command in "${commandList[@]}"
