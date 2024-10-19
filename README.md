@@ -1,4 +1,4 @@
-# This may not be interessing to watch in detail but i've made it public to show that i'm someone organized and that does clean things, i hate having to speed up the process of doing something that i like because it will just ruin it.
+# This may not be interessing to read in detail but i've made it public to show that i'm someone organized and that does clean things, i hate having to speed up the process of doing something that i like because it will just ruin it.
 
 # custom-setup
 
