@@ -23,7 +23,8 @@ alias cs="cstyle"
 
 alias v="valgrind"
 
-alias aliasdir="c /etc/profile.d/custom.sh"
+alias aliasbash="c /etc/profile.d/custom.sh"
+alias aliasfish="c /home/mr/.config/fish"
 
 alias cpy="xclip -selection clipboard"
 
@@ -44,9 +45,12 @@ alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
 
 alias which='alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot'
 
+# Haskell
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin /home/mr/.ghcup/bin $PATH # ghcup-env
 
 # alias '?'='echo $?' not needed since my fish prompt shows the status code
 
 alias p="python"
+
+alias "ls."="ls -a"

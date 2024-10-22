@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ "$#" -eq 1 ] && [ "$1" == "--help" ]; then
+    echo "\
+- changes the directory
+- handle numbers for changing upward
+
+    Without arguments () =>     cd
+    With argument (x: int) =>   (cd ../) times x
+    With argument (x: str) =>   cd x
+"
+    exit
+fi
+
+isNumber="^[0-9]+$"
+
+if [ "$#" -eq 0 ]; then
+    cd || exit
+elif [[ $1 =~ $isNumber ]]; then
+    x=$(("$1"))
+    while [ $x -ne 0 ];
+    do
+        cd .. || exit
+        x=$((x-1))
+    done
+else
+    cd "$1" || exit
+fi

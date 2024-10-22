@@ -36,3 +36,5 @@ alias min="wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz"
 alias "nc localhost"="nc 127.0.0.1"
 
 alias t="./tests/tester.py"
+
+alias cd=". cdup"
