@@ -1,5 +1,14 @@
 #!/bin/bash
 
+if [ $# -eq 1 ] && [ "$1" == "--help" ]; then
+    echo "\
+Start the epitech docker
+
+    Without arguments:  on the current directory.
+    With arguments:     on the first argument."
+    exit
+fi
+
 if [ $# -eq 1 ]; then
     dir="$(realpath "$1")"
 else

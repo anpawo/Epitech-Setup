@@ -1,5 +1,16 @@
 #!/bin/bash
 
+if [ $# -eq 1 ] && [ "$1" == "--help" ]; then
+    echo "\
+Clone the repo of a math project and init the rust files for it.
+The full name of the project is split into the number and the name to create the rust directory which prevents name starting with a number.
+
+    Arg @1:  number of the project.
+    Arg @2:  name of the projet.
+"
+    exit
+fi
+
 if [ $# -ne 2 ]; then
     echo "Invalid number of arguments, expected [number] [name]"
     echo "e.g:  ./mat 207 demography"
