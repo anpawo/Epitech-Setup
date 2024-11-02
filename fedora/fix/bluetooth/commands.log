@@ -1,0 +1,18 @@
+wpctl set-default 98
+wpctl status
+wpctl set-default 46
+wpctl set-default 52
+wpctl set-default 45
+wpctl set-default 41
+wpctl staus
+wpctl get-volume
+wpctl get-volume ID
+wpctl -h
+wpctl set-default -h
+wpctl set-default
+wpctl set-default 70
+wpctl set-default 59
+wpctl set-default 3
+wpctl set-default 2
+wpctl set-default 1
+wpctl set-default 0
