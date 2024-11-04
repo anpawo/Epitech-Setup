@@ -1,0 +1,11 @@
+---
+Language: Cpp
+
+# Sort includes according to their priotity and separate them with a blank line.
+IncludeBlocks: Regroup
+
+# Separate includes from 
+SeparateDefinitionBlocks: Always
+
+# Put the closing bracket of a function on a new line if the arguments aren't on the same line.
+AlignAfterOpenBracket: BlockIndent
