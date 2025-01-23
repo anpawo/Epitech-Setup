@@ -1,0 +1,26 @@
+#!/bin/bash
+
+SOURCE_REPO=$1
+TARGET_REPO=$2
+
+# Check if source and target repositories are provided
+if [ -z "$SOURCE_REPO" ] || [ -z "$TARGET_REPO" ]; then
+    echo "Usage: $0 <source-repo-url> <target-repo-url>"
+    exit 1
+fi
+
+# Clone the source repository
+git clone --mirror "$SOURCE_REPO" repo-mirror
+cd repo-mirror || exit
+
+# Add the target remote
+git remote add target "$TARGET_REPO"
+
+# Push to the target repository
+git push --mirror target
+
+# Clean up
+cd ..
+rm -rf repo-mirror
+
+echo "Mirroring completed successfully."
